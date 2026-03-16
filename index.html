@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ═══════════ SEO — EDIT THESE ═══════════ -->
+  <title>The Future of Work — Scrolling Report Template</title>
+  <meta name="description" content="A scrolling storytelling report template. Replace this description with your own." />
+  <meta property="og:title" content="The Future of Work — Report" />
+  <meta property="og:description" content="Replace this with your own Open Graph description." />
+  <meta property="og:image" content="assets/images/hero-bg.png" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- ───────────────────────────────────────────
+       READING PROGRESS BAR
+       (automatically fills as user scrolls)
+  ─────────────────────────────────────────── -->
+  <div class="progress-bar" id="progressBar" aria-hidden="true"></div>
+
+  <!-- ═══════════════════════════════════════════
+       NAVIGATION
+       EDIT: Change brand name and section links
+  ═══════════════════════════════════════════ -->
+  <nav class="site-nav" id="siteNav">
+    <a href="#" class="site-nav__brand">YourBrand</a>
+
+    <ul class="site-nav__links" id="navLinks">
+      <!-- EDIT: Update href values to match your section IDs -->
+      <li><a href="#intro">Overview</a></li>
+      <li><a href="#stats">Key Data</a></li>
+      <li><a href="#details">Insights</a></li>
+      <li><a href="#features">Solutions</a></li>
+      <li><a href="#cta">Contact</a></li>
+    </ul>
+
+    <!-- Mobile hamburger -->
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 1 — HERO
+       EDIT: Title, subtitle, CTA text, background image
+  ═══════════════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <!-- EDIT: Replace background image path -->
+    <div class="hero__bg" style="background-image: url('assets/images/hero-bg.png');"></div>
+    <div class="hero__overlay"></div>
+
+    <div class="hero__content">
+      <!-- EDIT: Tag / category label -->
+      <span class="hero__tag animate-on-scroll">Annual Report 2025</span>
+
+      <!-- EDIT: Hero headline -->
+      <h1 class="hero__title animate-on-scroll" data-delay="1">
+        The Future of Work
+      </h1>
+
+      <!-- EDIT: Short intro paragraph -->
+      <p class="hero__subtitle animate-on-scroll" data-delay="2">
+        How organizations are preparing for a new era of hybrid working, 
+        managing risk, and empowering distributed teams to thrive.
+      </p>
+
+      <!-- EDIT: Call-to-action button -->
+      <a href="#intro" class="hero__cta animate-on-scroll" data-delay="3">
+        Read the Report
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+      </a>
+    </div>
+
+    <!-- Scroll hint animation -->
+    <div class="hero__scroll-hint">
+      SCROLL
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 2 — INTRODUCTION TEXT BLOCK
+       EDIT: Eyebrow, title, and body paragraphs
+  ═══════════════════════════════════════════ -->
+  <section class="section-intro" id="intro">
+    <div class="container">
+      <span class="section-intro__eyebrow animate-on-scroll">Chapter 01</span>
+      <h2 class="section-intro__title animate-on-scroll" data-delay="1">
+        A Hybrid World Is the New Normal
+      </h2>
+      <hr class="section-divider animate-on-scroll" data-delay="2" />
+
+      <!-- EDIT: Replace these paragraphs with your own content -->
+      <div class="section-intro__body animate-on-scroll" data-delay="2">
+        <p>
+          Work has changed for good. The events of recent years inspired a decade of digital 
+          transformation in just months. Priorities for IT leaders were accelerated, abandoned, 
+          and adjusted as organizations scrambled to enable remote working at scale.
+        </p>
+        <p>
+          Questions shifted from "how do we enable remote work?" to "what will the return to 
+          work look like?" With initiative lists turned on their heads, many leaders are still 
+          working to balance competing priorities: cloud migration, security upgrades, enhanced 
+          user experience, and the constant evolution of the modern workplace.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 3 — KEY STATISTICS
+       EDIT: Numbers, labels, bar chart values
+  ═══════════════════════════════════════════ -->
+  <section class="section-stats" id="stats">
+    <div class="container container--wide">
+
+      <div class="features-header">
+        <span class="features-header__eyebrow animate-on-scroll">By the Numbers</span>
+        <h2 class="features-header__title animate-on-scroll" data-delay="1">
+          Key Findings at a Glance
+        </h2>
+      </div>
+
+      <!-- ── Big Number Cards ── -->
+      <!-- EDIT: Change each number and label -->
+      <div class="stats-grid">
+        <div class="stat-card animate-on-scroll" data-delay="1">
+          <div class="stat-card__number" data-count-to="80">0</div>
+          <div class="stat-card__label">of orgs adopting hybrid work</div>
+        </div>
+        <div class="stat-card animate-on-scroll" data-delay="2">
+          <div class="stat-card__number" data-count-to="46">0</div>
+          <div class="stat-card__label">expect 1–2 days in office</div>
+        </div>
+        <div class="stat-card animate-on-scroll" data-delay="3">
+          <div class="stat-card__number" data-count-to="59">0</div>
+          <div class="stat-card__label">cite morale as top benefit</div>
+        </div>
+        <div class="stat-card animate-on-scroll" data-delay="4">
+          <div class="stat-card__number" data-count-to="42">0</div>
+          <div class="stat-card__label">worried about risk management</div>
+        </div>
+      </div>
+
+      <!-- ── Survey Bar Chart ── -->
+      <!-- EDIT: Adjust --target-width, label, and value for each bar -->
+      <div style="margin-top: 4rem;">
+        <h3 class="split-text__title animate-on-scroll" style="text-align:center; margin-bottom:2rem;">
+          How many days will employees be in the office?
+        </h3>
+        <div class="bar-stats" style="max-width:600px; margin:0 auto;">
+          <div class="bar-stat animate-on-scroll">
+            <div class="bar-stat__header">
+              <span class="bar-stat__label">None (fully remote)</span>
+              <span class="bar-stat__value">6.2%</span>
+            </div>
+            <div class="bar-stat__track">
+              <div class="bar-stat__fill" style="--target-width: 6.2%"></div>
+            </div>
+          </div>
+          <div class="bar-stat animate-on-scroll" data-delay="1">
+            <div class="bar-stat__header">
+              <span class="bar-stat__label">1 or 2 days</span>
+              <span class="bar-stat__value">46.4%</span>
+            </div>
+            <div class="bar-stat__track">
+              <div class="bar-stat__fill" style="--target-width: 46.4%"></div>
+            </div>
+          </div>
+          <div class="bar-stat animate-on-scroll" data-delay="2">
+            <div class="bar-stat__header">
+              <span class="bar-stat__label">3 or 4 days</span>
+              <span class="bar-stat__value">33.7%</span>
+            </div>
+            <div class="bar-stat__track">
+              <div class="bar-stat__fill" style="--target-width: 33.7%"></div>
+            </div>
+          </div>
+          <div class="bar-stat animate-on-scroll" data-delay="3">
+            <div class="bar-stat__header">
+              <span class="bar-stat__label">Every day (fully office)</span>
+              <span class="bar-stat__value">13.7%</span>
+            </div>
+            <div class="bar-stat__track">
+              <div class="bar-stat__fill" style="--target-width: 13.7%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 4 — IMAGE + TEXT (left image)
+       EDIT: Image path, eyebrow, title, body
+  ═══════════════════════════════════════════ -->
+  <section class="section-split" id="details">
+    <div class="container container--wide">
+      <div class="split-grid">
+
+        <!-- EDIT: Replace image src -->
+        <div class="split-image animate-slide-left">
+          <img src="assets/images/section-1.png" alt="Modern workspace" loading="lazy" />
+        </div>
+
+        <div class="split-text animate-slide-right">
+          <span class="split-text__eyebrow">Chapter 02</span>
+          <h2 class="split-text__title">What's So Great About the Office?</h2>
+          <div class="split-text__body">
+            <p>
+              Places of work can be expensive—rent, equipment, maintenance, and other overheads add up. 
+              Yet only a tiny fraction of organizations are willing to give up the office entirely.
+            </p>
+            <p>
+              Almost half of IT leaders cite <strong>collaboration</strong> as the primary benefit of 
+              returning to the office, while concerns about employee morale remain the biggest drawback.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 5 — BLOCKQUOTE
+       EDIT: Quote text, author name, role
+  ═══════════════════════════════════════════ -->
+  <section class="section-quote">
+    <div class="quote-inner animate-on-scroll">
+      <!-- EDIT: Your quote text -->
+      <p class="quote-inner__text">
+        "If the primary purpose of an organization's space is to accommodate specific moments 
+        of collaboration rather than individual work, should 80 percent of the office be devoted 
+        to collaboration rooms?"
+      </p>
+      <!-- EDIT: Author and role -->
+      <p class="quote-inner__author">Jane Doe</p>
+      <p class="quote-inner__role">Partner, Strategic Consulting</p>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 6 — IMAGE + TEXT (right image, reversed)
+       EDIT: Image path, eyebrow, title, body
+  ═══════════════════════════════════════════ -->
+  <section class="section-split">
+    <div class="container container--wide">
+      <div class="split-grid split-grid--reverse">
+
+        <div class="split-image animate-slide-right">
+          <img src="assets/images/section-2.png" alt="Team collaboration" loading="lazy" />
+        </div>
+
+        <div class="split-text animate-slide-left">
+          <span class="split-text__eyebrow">Chapter 03</span>
+          <h2 class="split-text__title">The Appeal of Distributed Working</h2>
+          <div class="split-text__body">
+            <p>
+              Remote working is wildly popular. Over half of organizations surveyed listed 
+              <strong>employee morale</strong> as the primary benefit of providing remote options.
+            </p>
+            <p>
+              There are other benefits too—reduced overheads, productivity boosts, and an increasingly 
+              competitive advantage in attracting top talent in a rapidly shifting labor market.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 7 — FULL-WIDTH IMAGE BANNER
+       EDIT: Background image, title, body text
+  ═══════════════════════════════════════════ -->
+  <section class="section-banner">
+    <!-- EDIT: Replace background-image -->
+    <div class="section-banner__bg" style="background-image: url('assets/images/quote-bg.png');"></div>
+    <div class="section-banner__overlay"></div>
+
+    <div class="section-banner__content animate-on-scroll">
+      <h2 class="section-banner__title">Why Working from Anywhere Is Hard</h2>
+      <p class="section-banner__body">
+        The biggest obstacle facing IT teams isn't productivity or morale—it's managing 
+        risk and compliance. With reduced visibility into remote endpoints, organizations 
+        are exposed to greater security threats than ever before.
+      </p>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 8 — DARK CONTENT BLOCK w/ STATS
+       EDIT: Eyebrow, title, body, bar chart data
+  ═══════════════════════════════════════════ -->
+  <section class="section-dark">
+    <div class="container">
+      <span class="section-intro__eyebrow animate-on-scroll">Chapter 04</span>
+      <h2 class="section-intro__title animate-on-scroll" data-delay="1">
+        Managing Risk in the Dark
+      </h2>
+      <hr class="section-divider animate-on-scroll" data-delay="2" />
+
+      <div class="section-intro__body animate-on-scroll" data-delay="2">
+        <p>
+          IT leaders face the reality that a large percentage of the workforce will remain 
+          distributed. Many are quickly realizing they lack visibility into endpoints, 
+          connectivity, and application performance.
+        </p>
+      </div>
+
+      <!-- Survey-style bars on dark background -->
+      <div class="bar-stats" style="max-width:600px; margin-top:2.5rem;">
+        <h3 class="split-text__title animate-on-scroll" style="margin-bottom:1.5rem;">
+          Biggest challenge with "work from anywhere" policies?
+        </h3>
+        <div class="bar-stat animate-on-scroll">
+          <div class="bar-stat__header">
+            <span class="bar-stat__label" style="color: var(--color-text-on-dark);">Tools & technologies</span>
+            <span class="bar-stat__value">54.1%</span>
+          </div>
+          <div class="bar-stat__track">
+            <div class="bar-stat__fill" style="--target-width: 54.1%"></div>
+          </div>
+        </div>
+        <div class="bar-stat animate-on-scroll" data-delay="1">
+          <div class="bar-stat__header">
+            <span class="bar-stat__label" style="color: var(--color-text-on-dark);">Processes & policies</span>
+            <span class="bar-stat__value">27.9%</span>
+          </div>
+          <div class="bar-stat__track">
+            <div class="bar-stat__fill" style="--target-width: 27.9%"></div>
+          </div>
+        </div>
+        <div class="bar-stat animate-on-scroll" data-delay="2">
+          <div class="bar-stat__header">
+            <span class="bar-stat__label" style="color: var(--color-text-on-dark);">People & culture</span>
+            <span class="bar-stat__value">18.0%</span>
+          </div>
+          <div class="bar-stat__track">
+            <div class="bar-stat__fill" style="--target-width: 18.0%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 9 — SECOND BLOCKQUOTE (variation)
+       EDIT: Quote text, author, role
+  ═══════════════════════════════════════════ -->
+  <section class="section-quote">
+    <div class="quote-inner animate-on-scroll">
+      <p class="quote-inner__text">
+        "Employees have been empowered to think about where and how they are most productive, 
+        while employers have been tasked with ensuring the devices they provide are fit for 
+        today's purpose."
+      </p>
+      <p class="quote-inner__author">Alex Johnson</p>
+      <p class="quote-inner__role">Director of Technology Strategy</p>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 10 — IMAGE + TEXT (data visualization)
+       EDIT: Image, title, body text
+  ═══════════════════════════════════════════ -->
+  <section class="section-split">
+    <div class="container container--wide">
+      <div class="split-grid">
+
+        <div class="split-image animate-slide-left">
+          <img src="assets/images/section-3.png" alt="Data visualization" loading="lazy" />
+        </div>
+
+        <div class="split-text animate-slide-right">
+          <span class="split-text__eyebrow">Chapter 05</span>
+          <h2 class="split-text__title">Who Owns What?</h2>
+          <div class="split-text__body">
+            <p>
+              The transition to working from anywhere has increased the chance of employees 
+              using multiple devices. Questions about management and ownership have become 
+              more frequent in the era of hybrid working.
+            </p>
+            <p>
+              Most organizations are opting to maintain as much management and control as 
+              possible over the devices employees use to work, reflecting a shift away from 
+              permissive BYOD policies.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 11 — FEATURE CARDS / SOLUTIONS
+       EDIT: Each card's icon, title, and body
+  ═══════════════════════════════════════════ -->
+  <section class="section-features" id="features">
+    <div class="container container--wide">
+
+      <div class="features-header">
+        <span class="features-header__eyebrow animate-on-scroll">Solutions</span>
+        <h2 class="features-header__title animate-on-scroll" data-delay="1">
+          How We Can Help
+        </h2>
+      </div>
+
+      <div class="features-grid">
+        <!-- EDIT: Swap SVG icon, title, and body per card -->
+        <div class="feature-card animate-on-scroll" data-delay="1">
+          <div class="feature-card__icon">
+            <!-- Icon: shield -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/></svg>
+          </div>
+          <h3 class="feature-card__title">Asset Visibility</h3>
+          <p class="feature-card__body">
+            Get a crystal-clear inventory of all your assets, then manage them safely, 
+            remotely, and at scale.
+          </p>
+        </div>
+
+        <div class="feature-card animate-on-scroll" data-delay="2">
+          <div class="feature-card__icon">
+            <!-- Icon: activity -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <h3 class="feature-card__title">Experience Monitoring</h3>
+          <p class="feature-card__body">
+            Get full visibility into both the endpoint and the network, helping diagnose 
+            problems and potential issues in real-time.
+          </p>
+        </div>
+
+        <div class="feature-card animate-on-scroll" data-delay="3">
+          <div class="feature-card__icon">
+            <!-- Icon: lock -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          </div>
+          <h3 class="feature-card__title">Zero Trust Access</h3>
+          <p class="feature-card__body">
+            Employ zero trust principles to provide access to corporate applications in a 
+            way that significantly reduces the attack surface.
+          </p>
+        </div>
+
+        <div class="feature-card animate-on-scroll" data-delay="4">
+          <div class="feature-card__icon">
+            <!-- Icon: wifi -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h.01"/><path d="M2 8.82a15 15 0 0 1 20 0"/><path d="M5 12.859a10 10 0 0 1 14 0"/><path d="M8.5 16.429a5 5 0 0 1 7 0"/></svg>
+          </div>
+          <h3 class="feature-card__title">Resilient Connectivity</h3>
+          <p class="feature-card__body">
+            Keep workers connected even in rapidly-changing or poor network conditions by 
+            making sessions unbreakable.
+          </p>
+        </div>
+
+        <div class="feature-card animate-on-scroll" data-delay="1">
+          <div class="feature-card__icon">
+            <!-- Icon: filter -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/></svg>
+          </div>
+          <h3 class="feature-card__title">Content Filtering</h3>
+          <p class="feature-card__body">
+            Sophisticated, context-aware content filtering controls regardless of which 
+            network a device is connected to.
+          </p>
+        </div>
+
+        <div class="feature-card animate-on-scroll" data-delay="2">
+          <div class="feature-card__icon">
+            <!-- Icon: check-circle -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+          </div>
+          <h3 class="feature-card__title">Compliance Controls</h3>
+          <p class="feature-card__body">
+            Powerful controls to keep devices and workers compliant, allowing IT teams to 
+            enforce policies required to reduce risk.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 12 — SUMMARY (dark block with bullet list)
+       EDIT: Title, body, and list items
+  ═══════════════════════════════════════════ -->
+  <section class="section-dark">
+    <div class="container">
+      <span class="section-intro__eyebrow animate-on-scroll">Summary</span>
+      <h2 class="section-intro__title animate-on-scroll" data-delay="1">
+        Key Takeaways
+      </h2>
+      <hr class="section-divider animate-on-scroll" data-delay="2" />
+
+      <div class="section-intro__body animate-on-scroll" data-delay="2">
+        <p>
+          The overwhelming majority of organizations will manage some kind of hybrid blend. 
+          Although collaboration is harder, staying remote offers huge advantages in cost and 
+          employee happiness—making it a competitive advantage for employers that channel the 
+          outcomes effectively.
+        </p>
+      </div>
+
+      <!-- EDIT: Add or remove list items as needed -->
+      <ul class="items-list animate-on-scroll" data-delay="3">
+        <li>
+          <svg class="list-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 11 3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+          <span>Hybrid working is the future — nearly 80% of organizations will adopt some form of blended policy.</span>
+        </li>
+        <li>
+          <svg class="list-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 11 3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+          <span>Collaboration remains the #1 reason to come back to the office, cited by 43% of leaders.</span>
+        </li>
+        <li>
+          <svg class="list-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 11 3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+          <span>Employee morale is the top benefit of remote work — but also the top drawback of office work.</span>
+        </li>
+        <li>
+          <svg class="list-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 11 3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+          <span>Risk management is the #1 concern — only 38% have full visibility into distributed devices.</span>
+        </li>
+        <li>
+          <svg class="list-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 11 3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+          <span>Technology is the biggest barrier — 54% say tools and technologies are the hardest challenge to solve.</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SECTION 13 — CALL TO ACTION / ENDING
+       EDIT: Title, body, button text and link
+  ═══════════════════════════════════════════ -->
+  <section class="section-cta" id="cta">
+    <div class="container">
+      <h2 class="section-cta__title animate-on-scroll">Ready to Learn More?</h2>
+      <p class="section-cta__body animate-on-scroll" data-delay="1">
+        Discover how the right technology can empower your distributed workforce, reduce risk 
+        exposure, and create a world-class experience for every employee.
+      </p>
+      <!-- EDIT: Button text and destination -->
+      <a href="#" class="section-cta__btn animate-on-scroll" data-delay="2">
+        Get in Touch
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+       EDIT: Brand name, links, copyright year
+  ═══════════════════════════════════════════ -->
+  <footer class="site-footer">
+    <div class="container">
+      <p class="site-footer__brand">YourBrand</p>
+
+      <!-- Social links —— EDIT: Update href values -->
+      <div class="social-links">
+        <a href="#" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a href="#" aria-label="Twitter / X">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+        </a>
+        <a href="#" aria-label="Facebook">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+        <a href="#" aria-label="Email">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        </a>
+      </div>
+
+      <!-- Footer links -->
+      <ul class="site-footer__links">
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+
+      <!-- EDIT: Copyright year and company name -->
+      <p class="site-footer__copy">&copy; 2025 YourBrand. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
