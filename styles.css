@@ -259,7 +259,6 @@ a:hover { color: var(--color-primary-light); }
   position: relative;
   z-index: 2;
   max-width: 720px;
-  padding: 2rem var(--section-padding-x);
 }
 .hero__tag {
   display: inline-block;
