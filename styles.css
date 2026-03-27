@@ -155,6 +155,56 @@ a:hover { color: var(--color-primary-light); }
   transform: scale(1);
 }
 
+/* ── Floating Storytelling Elements ── */
+.floating-element {
+  position: fixed;
+  z-index: 10;
+  pointer-events: none; /* Let users click through to the page */
+  animation: floatAnim 10s ease-in-out infinite;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-card-hover);
+  opacity: 0.6; /* Slightly transparent to not distract fully from text */
+  transition: opacity var(--transition-speed);
+}
+.floating-element img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Distinct positioning/timing for each floating image */
+.float-1 {
+  width: 220px; height: 320px;
+  top: 15%; left: 2%;
+  animation-duration: 12s;
+}
+.float-2 {
+  width: 280px; height: 190px;
+  top: 60%; right: -20px;
+  animation-duration: 14s;
+  animation-delay: 2s;
+}
+.float-3 {
+  width: 180px; height: 180px;
+  top: 75%; left: -40px;
+  animation-duration: 9s;
+  animation-delay: 4s;
+  border-radius: 50%; /* Make this one a circle for variety */
+}
+
+@keyframes floatAnim {
+  0%, 100% { transform: translateY(0) rotate(-2deg); }
+  50% { transform: translateY(-40px) rotate(3deg); }
+}
+
+@media (max-width: 1024px) {
+  .floating-element { opacity: 0.2; } /* Fade out more on smaller screens */
+}
+@media (max-width: 768px) {
+  .floating-element { display: none; } /* Hide completely on mobile */
+}
+
 /* ══════════════════════════════════════════════════════════════
    SECTION: Navigation (sticky, minimal)
    ══════════════════════════════════════════════════════════════ */

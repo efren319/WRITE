@@ -18,20 +18,6 @@
 <body>
 
   <!-- ───────────────────────────────────────────
-       FLOATING STORYTELLING ELEMENTS
-       (Animated images floating on the sides)
-  ─────────────────────────────────────────── -->
-  <div class="floating-element float-1" aria-hidden="true">
-    <img src="assets/images/section-1.png" alt="" />
-  </div>
-  <div class="floating-element float-2" aria-hidden="true">
-    <img src="assets/images/section-2.png" alt="" />
-  </div>
-  <div class="floating-element float-3" aria-hidden="true">
-    <img src="assets/images/section-3.png" alt="" />
-  </div>
-
-  <!-- ───────────────────────────────────────────
        READING PROGRESS BAR
        (automatically fills as user scrolls)
   ─────────────────────────────────────────── -->
@@ -126,7 +112,89 @@
     </div>
   </section>
 
-  <!-- Stats and bar charts removed to focus on storytelling -->
+  <!-- ═══════════════════════════════════════════
+       SECTION 3 — KEY STATISTICS
+       EDIT: Numbers, labels, bar chart values
+  ═══════════════════════════════════════════ -->
+  <section class="section-stats" id="stats">
+    <div class="container container--wide">
+
+      <div class="features-header">
+        <span class="features-header__eyebrow animate-on-scroll">By the Numbers</span>
+        <h2 class="features-header__title animate-on-scroll" data-delay="1">
+          Key Findings at a Glance
+        </h2>
+      </div>
+
+      <!-- ── Big Number Cards ── -->
+      <!-- EDIT: Change each number and label -->
+      <div class="stats-grid">
+        <div class="stat-card animate-on-scroll" data-delay="1">
+          <div class="stat-card__number" data-count-to="80">0</div>
+          <div class="stat-card__label">of orgs adopting hybrid work</div>
+        </div>
+        <div class="stat-card animate-on-scroll" data-delay="2">
+          <div class="stat-card__number" data-count-to="46">0</div>
+          <div class="stat-card__label">expect 1–2 days in office</div>
+        </div>
+        <div class="stat-card animate-on-scroll" data-delay="3">
+          <div class="stat-card__number" data-count-to="59">0</div>
+          <div class="stat-card__label">cite morale as top benefit</div>
+        </div>
+        <div class="stat-card animate-on-scroll" data-delay="4">
+          <div class="stat-card__number" data-count-to="42">0</div>
+          <div class="stat-card__label">worried about risk management</div>
+        </div>
+      </div>
+
+      <!-- ── Survey Bar Chart ── -->
+      <!-- EDIT: Adjust --target-width, label, and value for each bar -->
+      <div style="margin-top: 4rem;">
+        <h3 class="split-text__title animate-on-scroll" style="text-align:center; margin-bottom:2rem;">
+          How many days will employees be in the office?
+        </h3>
+        <div class="bar-stats" style="max-width:600px; margin:0 auto;">
+          <div class="bar-stat animate-on-scroll">
+            <div class="bar-stat__header">
+              <span class="bar-stat__label">None (fully remote)</span>
+              <span class="bar-stat__value">6.2%</span>
+            </div>
+            <div class="bar-stat__track">
+              <div class="bar-stat__fill" style="--target-width: 6.2%"></div>
+            </div>
+          </div>
+          <div class="bar-stat animate-on-scroll" data-delay="1">
+            <div class="bar-stat__header">
+              <span class="bar-stat__label">1 or 2 days</span>
+              <span class="bar-stat__value">46.4%</span>
+            </div>
+            <div class="bar-stat__track">
+              <div class="bar-stat__fill" style="--target-width: 46.4%"></div>
+            </div>
+          </div>
+          <div class="bar-stat animate-on-scroll" data-delay="2">
+            <div class="bar-stat__header">
+              <span class="bar-stat__label">3 or 4 days</span>
+              <span class="bar-stat__value">33.7%</span>
+            </div>
+            <div class="bar-stat__track">
+              <div class="bar-stat__fill" style="--target-width: 33.7%"></div>
+            </div>
+          </div>
+          <div class="bar-stat animate-on-scroll" data-delay="3">
+            <div class="bar-stat__header">
+              <span class="bar-stat__label">Every day (fully office)</span>
+              <span class="bar-stat__value">13.7%</span>
+            </div>
+            <div class="bar-stat__track">
+              <div class="bar-stat__fill" style="--target-width: 13.7%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
 
   <!-- ═══════════════════════════════════════════
        SECTION 4 — IMAGE + TEXT (left image)
@@ -248,7 +316,39 @@
         </p>
       </div>
 
-      <!-- Removed bar charts to focus on storytelling -->
+      <!-- Survey-style bars on dark background -->
+      <div class="bar-stats" style="max-width:600px; margin-top:2.5rem;">
+        <h3 class="split-text__title animate-on-scroll" style="margin-bottom:1.5rem;">
+          Biggest challenge with "work from anywhere" policies?
+        </h3>
+        <div class="bar-stat animate-on-scroll">
+          <div class="bar-stat__header">
+            <span class="bar-stat__label" style="color: var(--color-text-on-dark);">Tools & technologies</span>
+            <span class="bar-stat__value">54.1%</span>
+          </div>
+          <div class="bar-stat__track">
+            <div class="bar-stat__fill" style="--target-width: 54.1%"></div>
+          </div>
+        </div>
+        <div class="bar-stat animate-on-scroll" data-delay="1">
+          <div class="bar-stat__header">
+            <span class="bar-stat__label" style="color: var(--color-text-on-dark);">Processes & policies</span>
+            <span class="bar-stat__value">27.9%</span>
+          </div>
+          <div class="bar-stat__track">
+            <div class="bar-stat__fill" style="--target-width: 27.9%"></div>
+          </div>
+        </div>
+        <div class="bar-stat animate-on-scroll" data-delay="2">
+          <div class="bar-stat__header">
+            <span class="bar-stat__label" style="color: var(--color-text-on-dark);">People & culture</span>
+            <span class="bar-stat__value">18.0%</span>
+          </div>
+          <div class="bar-stat__track">
+            <div class="bar-stat__fill" style="--target-width: 18.0%"></div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 

@@ -174,19 +174,5 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  /* ─────────────────────────────────────────────
-     8. PARALLAX-LITE (optional subtle effect)
-     Moves the hero background image slightly
-     slower than scroll for depth.
-  ───────────────────────────────────────────── */
-  const heroBg = document.querySelector('.hero__bg');
-
-  if (heroBg) {
-    window.addEventListener('scroll', () => {
-      const scrollY = window.scrollY;
-      if (scrollY < window.innerHeight * 1.5) {
-        heroBg.style.transform = `translateY(${scrollY * 0.25}px)`;
-      }
-    }, { passive: true });
-  }
+  /* Parallax effect removed per user request */
 });
